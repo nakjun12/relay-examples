@@ -14,6 +14,7 @@ const PosterBylineFragment = graphql`
   fragment PosterBylineFragment on Actor {
     id
     name
+
     profilePicture {
       ...ImageFragment
     }
@@ -45,6 +46,7 @@ export default function PosterByline({ poster }: Props): React.ReactElement {
         className="byline__image"
       />
       <div className="byline__name">{data.name}</div>
+
       <Hovercard targetRef={hoverRef} onBeginHover={onBeginHover}>
         <PosterDetailsHovercardContents queryRef={hovercardQueryRef} />
       </Hovercard>
