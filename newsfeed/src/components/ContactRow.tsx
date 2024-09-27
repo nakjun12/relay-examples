@@ -1,7 +1,7 @@
 import * as React from "react";
-import Image from "./Image";
-import { graphql } from "relay-runtime";
 import { useFragment } from "react-relay";
+import { graphql } from "relay-runtime";
+import Image from "./Image";
 
 import type { ContactRowFragment$key } from "./__generated__/ContactRowFragment.graphql";
 
